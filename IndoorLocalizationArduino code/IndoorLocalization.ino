@@ -24,9 +24,9 @@ void loop() {
   digitalWrite(trigPin, LOW);
   duration = pulseIn(echoPin, HIGH);
   //distance calculation using ultrasonic signal for first sensor
- distance = (duration / 2) / 29.1;
   //labelOne
-distanceB = (durationB / 2) / 29.1;
+  distance = (duration / 2) / 29.1;
+
   digitalWrite(trigPinB, LOW);
   delayMicroseconds(2);
   digitalWrite(trigPinB, HIGH);
@@ -35,6 +35,7 @@ distanceB = (durationB / 2) / 29.1;
   durationB = pulseIn(echoPinB, HIGH);
   //labelOneEnd
   //distance calculation using ultrasonic signal for second sensor
+  distanceB = (durationB / 2) / 29.1;
   int recv = 0;
   if (distance <= 0 || distanceB <= 0) {
     Serial.println("-1 % -1");
