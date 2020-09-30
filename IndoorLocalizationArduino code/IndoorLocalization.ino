@@ -24,7 +24,9 @@ void loop() {
   digitalWrite(trigPin, LOW);
   duration = pulseIn(echoPin, HIGH);
   //distance calculation using ultrasonic signal for first sensor
+ distance = (duration / 2) / 29.1;
   //labelOne
+distanceB = (durationB / 2) / 29.1;
   digitalWrite(trigPinB, LOW);
   delayMicroseconds(2);
   digitalWrite(trigPinB, HIGH);
