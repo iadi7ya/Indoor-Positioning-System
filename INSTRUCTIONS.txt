@@ -1,0 +1,13 @@
+Please follow given instructions :
+1.First connect arduino(atmega 2560) with two ultrasonic sensors(HC-SR04) according to instructions given in arduino code file(ino file).
+2.After setting up hardware circuit run arduino code using arduino IDE(prefferebly 1.6.5).
+3.Now run Java code for making conection to cloud platform (java code is responsible for posting and getting data from cloud. Whole business logic is implemented
+  in Java code).
+4.Next Java code for web where ajax code will run asynchronously to fetch location co-ordinates for object and then display them on web page.
+
+
+NOTE : 1.Edit the code and use your own cloud platfom ip address and other links as they may not work for you. For me it is working fine because i have the 
+       proper credential and authorization.
+       2. I have used Eclipse indigo IDE and tomcat server 6.0 for development.
+       3.I have taken arduino atmega 2560 board and HC-SR04 Ultrasonic sensor.
+

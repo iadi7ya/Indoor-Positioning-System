@@ -1,0 +1,88 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	overflow: hidden;
+	/*background-image: url('images/img1.jpg');
+	width:100%;
+	height:100%;
+	background-size: cover;
+	z-index: -9999;*/
+}
+
+div#header {
+	width: 100%;
+	height: 8%;
+	border-bottom: 5px solid black;
+	text-align: center;
+	background-color: #8484FF;
+	padding-top: 1%;
+	top: 0px;
+	left: 0px;
+}
+
+div#content {
+	width: 100%;
+	height: 80%;
+	background-color: #E6E6FA;
+}
+
+div#footer {
+	width: 100%;
+	height: 8%;
+	padding-top: 0.8%;
+	text-align: center;
+	border-top: 5px solid black;
+	background-color: #6495ED;
+}
+
+table,tr,td {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+td {
+	width: 90px;
+	height: 90px;
+	text-align: center;
+}
+
+div#region {
+	border: 2px solid black;
+	width: 7cm;
+	height: 7cm;
+	margin-left: 480px;
+	margin-top: 50px;
+}
+
+@-webkit-keyframes blinker { 
+	from {
+		opacity:1.0;
+	} to {
+		opacity:0.0;
+		}
+}
+
+@keyframes blinker { 
+	from {
+		opacity:1.0;
+	} to {
+		opacity:0.0;
+	} 
+}
+
+div#blink{
+	border : 1px solid black;
+	width : 15px;
+	height : 15px;
+	border-radius : 8px;
+	background-color : black;
+	text-decoration:blink;
+  	-webkit-animation-name:blinker;
+    animation-name:blinker;  
+ 	-webkit-animation-iteration-count:infinite;  
+    animation-iteration-count:infinite;  
+  	-webkit-animation-timing-function:cubic-bezier(1.0,0,0,1.0);
+    animation-timing-function:cubic-bezier(1.0,0,0,1.0);
+  	-webkit-animation-duration:1s; 
+    animation-duration:1s; 
+}
